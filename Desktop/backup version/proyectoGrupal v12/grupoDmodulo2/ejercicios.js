@@ -37,3 +37,12 @@ console.log (botellaReutilizable)
 
 
 
+//clase 15
+
+//ejercicio 1
+
+//ejercicio 2
+
+//ejercicio 3
+
+//ejercicio 4
