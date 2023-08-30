@@ -134,7 +134,7 @@ Si el usuario no elige un número dentro de los indicados, que el mensaje
 sea "Debes elegir un número entre el 1 y el 4".
 Tip: la función prompt almacena un dato de tipo string. Usando 
 Number() podemos pasar a número un dato*/
-
+/*
 let destinoTuristico =   Number( prompt ("Elige tu destino preferido:\n1- Canadá\n2- España\n3- Bariloche\n4- Japón"));
 
 switch (destinoTuristico) {
@@ -154,7 +154,131 @@ switch (destinoTuristico) {
           console.log("Debes elegir un número entre el 1 y el 4");
   }
   
+  */
+
+//CLASE 17 ejercicios
+//ejercicio1
+/*Escribir dos funciones, una que devuelva el doble de 
+cualquier número que le pasemos, y la otra el triple*/
+
+/*
+function duplicar(numero) {
+  return numero * 2;
+}
+function triplicar(numero) {
+  return numero * 3;
+}
+let numero = prompt("Introduce un número: ");
+console.log(duplicar(numero));
+console.log("el triple es" + " " + triplicar(numero));
+
+*/
+
+//ejercicio2
+/*
+Escribir una función que devuelva el perímetro de un 
+círculo cuando le damos el radio como parámetro.*/
+
+/*
+function perimetro (radio) {
+  return Math.PI * radio * 2;
+}
+let radio = prompt("Introduce un número de radio: ");
+console.log(perimetro(radio));
+
+*/
+
+//ejercicio3
+/*Escribir una función que devuelva el área de un círculo 
+cuando recibe el radio como parámetro.*/
+/*
+function area (radio) {
+    return Math.PI * radio * radio;
+  }
+  let radio = prompt("Introduce un número de radio: ");
+  console.log(area(radio));
   
+*/
+//ejercicio4
+/*Escribir una función que nos retorne true si un número es mayor a 
+10, o false en caso contrario.*/
+
+/*
+function esMayorQue10(numero) {
+  return numero > 10;
+}
+let numero = prompt("Introduce un número: ");
+let esMayor = esMayorQue10(numero);
+
+if (esMayor) {
+  console.log("El número es mayor que 10");
+} else {
+  console.log("El número no es mayor que 10");
+}
+
+*/
+//ejercicio5
+/*Convertir la siguiente función declarada en una arrow function:
+function saludar(nombre, apellido) {
+return 'Hola, ' + nombre + ' ' + apellido + '!';
+}
+*/
+
+
+//ejercicio6
+
+//resolucion profe vero
+//1
+let doble = (num) => num * 2 ;
+console.log(doble(4))
+
+let triple = (num) => num * 3;
+console.log(triple(3))
+
+//2
+function perimetro(radio){
+    return 3.14 * radio * 2;
+}
+console.log(perimetro(5))
+//3
+function area(radio){
+    return  radio * radio * 3.14 ;
+}
+console.log(area(5))
+
+//4
+
+function esMayor(unNumero) {
+    if ( unNumero > 10){
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(esMayor(15))
+
+//5 
+// function saludar(nombre, apellido) {
+//     return 'Hola, ' + nombre + ' ' + apellido + '!';
+// }
+
+let saludar = (nombre, apellido) => 'Hola, ' + nombre + ' ' +  apellido + '!';
+
+console.log(saludar('Peter', 'Parker'));
+
+//6
+
+let aplicarCallback = (numero, callback)=> callback(numero);
+
+console.log(aplicarCallback(5, doble))
+// doble(5)
+console.log(aplicarCallback(5, triple))
+
+
+
+
+
+ 
 
 
 
