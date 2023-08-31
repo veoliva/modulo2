@@ -227,6 +227,8 @@ return 'Hola, ' + nombre + ' ' + apellido + '!';
 
 //ejercicio6
 
+
+/*
 //resolucion profe vero
 //1
 let doble = (num) => num * 2 ;
@@ -273,7 +275,7 @@ let aplicarCallback = (numero, callback)=> callback(numero);
 console.log(aplicarCallback(5, doble))
 // doble(5)
 console.log(aplicarCallback(5, triple))
-
+*/
 
 
 
