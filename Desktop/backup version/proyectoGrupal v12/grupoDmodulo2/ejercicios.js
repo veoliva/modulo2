@@ -277,8 +277,85 @@ console.log(aplicarCallback(5, doble))
 console.log(aplicarCallback(5, triple))
 */
 
+/*ejercicios clase 19
+
+ejercicio 1
+Dado un array existente de palabras sueltas, que juntas forman una gran frase, realizar lo 
+siguiente:
+Utilizar un método de array sobre la variable dada, para que se convierta en una oración 
+entera, y almacenar ese string en una variable nueva. Mostrar por consola el resultado.
+let palabras = 
+["Cada","minuto","que","pasa","es","otra","oportunidad","de","seguir","cambiando."];
+*/
+
+let palabras = ["Cada", "minuto", "que", "pasa", "es", "otra", "oportunidad", "de", "seguir", "cambiando."];
+let frase = palabras.join(" ");
+console.log(frase);
 
 
+/* ejercicio 2
+Dado un array con tareas a realizar, eliminar la última, ya que fue realizada.
+Crear una nueva variable, donde se almacene las tareas que se van cumpliendo.
+Mostrar por consola la tarea cumplida.*/
+
+let tareas = [
+  {
+    nombre: "Regar",
+    lugar: "Patio",
+    tiempo: 20,
+  },
+  {
+    nombre: "Compras",
+    lugar: "Supermercado",
+    tiempo: 60,
+  },
+  {
+    nombre: "Hacer pastafrola",
+    lugar: "Cocina",
+    tiempo: 60,
+  },
+];
+
+
+let tareaCumplida = tareas.pop();
+let tareasCumplidas = [];
+console.log(tareaCumplida.nombre);
+
+
+/*ejercicio 3
+Teniendo en cuenta el ejercicio anterior, ahora se necesita agregar dos tareas 
+nuevas.
+Mostrar por consola la lista completa con las incorporaciones.*/
+
+tareas.push({
+  nombre: "Limpiar la casa",
+  lugar: "Toda la casa",
+  tiempo: 120,
+});
+tareas.push({
+  nombre: "Lavar la ropa",
+  lugar: "Lavandería",
+  tiempo: 60,
+});
+
+console.log(tareas);
+
+
+
+/*ejercicio 4
+ Ahora es necesario sacar la primera tarea de la lista.*/
+ 
+ let tareaSacada = tareas.shift();
+ console.log(tareas);
+
+
+/*ejercicio 5
+Crear una variable que almacene una frase, y mostrar por consola la cantidad 
+de caracteres que contiene*/
+
+let frase2 = "Hola grupo D";
+let total = frase2.length;
+console.log(total);
 
  
 
