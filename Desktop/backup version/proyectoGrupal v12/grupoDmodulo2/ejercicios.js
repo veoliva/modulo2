@@ -287,16 +287,17 @@ entera, y almacenar ese string en una variable nueva. Mostrar por consola el res
 let palabras = 
 ["Cada","minuto","que","pasa","es","otra","oportunidad","de","seguir","cambiando."];
 */
+/*
 
 let palabras = ["Cada", "minuto", "que", "pasa", "es", "otra", "oportunidad", "de", "seguir", "cambiando."];
 let frase = palabras.join(" ");
 console.log(frase);
 
-
+*/
 /* ejercicio 2
 Dado un array con tareas a realizar, eliminar la última, ya que fue realizada.
 Crear una nueva variable, donde se almacene las tareas que se van cumpliendo.
-Mostrar por consola la tarea cumplida.*/
+Mostrar por consola la tarea cumplida.*//*
 
 let tareas = [
   {
@@ -321,11 +322,12 @@ let tareaCumplida = tareas.pop();
 let tareasCumplidas = [];
 console.log(tareaCumplida.nombre);
 
+*/
 
 /*ejercicio 3
 Teniendo en cuenta el ejercicio anterior, ahora se necesita agregar dos tareas 
 nuevas.
-Mostrar por consola la lista completa con las incorporaciones.*/
+Mostrar por consola la lista completa con las incorporaciones.*//*
 
 tareas.push({
   nombre: "Limpiar la casa",
@@ -341,25 +343,97 @@ tareas.push({
 console.log(tareas);
 
 
-
+*/
 /*ejercicio 4
- Ahora es necesario sacar la primera tarea de la lista.*/
+ Ahora es necesario sacar la primera tarea de la lista.*//*
  
  let tareaSacada = tareas.shift();
  console.log(tareas);
 
-
+/*
 /*ejercicio 5
 Crear una variable que almacene una frase, y mostrar por consola la cantidad 
-de caracteres que contiene*/
+de caracteres que contiene*/ /*
 
 let frase2 = "Hola grupo D";
 let total = frase2.length;
 console.log(total);
 
- 
+
+*/
+
+//clase 20 ejercicios
+//ciclo for
+/*
+  for (let i = 0; i <= 7; i++) {
+    console.log("hola");
+  }
+*/
+
+/* while
+
+let vuelta = 0 ;
+while (vuelta <=4){
+  console.log(vuelta);
+  vuelta++
+}
+
+*/
+
+//do while
+/*
+
+let i = 4;
+do{
+  console.log(i);
+  i++
+}while(i<=5)
+
+*/
 
 
+/*1) Crear una función que muestre por consola el texto ('Pasando la 
+vuelta ' + número de vuelta), y llegue hasta la vuelta n° 5.
+Ejecutar la función.*/
 
+/*
+for (let i = 0; i <= 5; i++) {
+  console.log("vuelta n°" +i);
+}
 
- 
+*/
+/*2) Crear una función que reciba por parámetro un número y cuente la 
+cantidad de números impares que hay desde el 0 hasta número 
+recibido.
+Pista: Se necesitará usar for e if. Recordar cómo podemos saber si un 
+número es par o impar.
+*/
+/*
+function contarImpares(numero) {
+  let contador = 0
+  for (let i = 0; i <= numero; i++) {
+    if (i % 2 !== 0) {
+      contador++;
+    }
+  }
+  return contador;
+}
+
+console.log(contarImpares(10)); // 5
+console.log(contarImpares(20)); // 10
+
+*/
+/*
+3) Crear una función que reciba por parámetro un número, y muestre 
+por consola la tabla de multiplicar del 1 al 10 del número que reciba.
+El mensaje podría verse de la siguiente manera: 
+console.log(numero + ' * ' + i + ' = ' + numero * i);*/
+/*
+function TablaMultiplicar(numero) {
+  for (let i = 0; i <= 10; i++){
+    console.log(`${numero} * ${i} = ${numero * i}`);
+  }
+}
+
+TablaMultiplicar(5);
+*/
