@@ -437,3 +437,110 @@ function TablaMultiplicar(numero) {
 
 TablaMultiplicar(5);
 */
+
+//clase 21 ejercicios 
+/*
+Ejercicio 1
+1) Necesitamos escribir una función la cual 
+recibiendo un array con importes, nos devuelva el 
+resultado final de la suma de los importes de todos 
+los meses que tienen ganancia, a excepción de los 
+que superen un importe de $1.000.*/
+
+/*
+function sumaImportesGanancia(importes) {
+    let suma = 0;
+  
+    for (let i = 0; i < importes.length; i++) {
+      const importe = importes[i];
+  
+      if (importe > 0 && importe <= 1000) {
+        suma += importe;
+      }
+    }
+  
+    return suma;
+  }
+  
+  let importes = [100, 200, 1100, 500, 600];
+  
+  let suma = sumaImportesGanancia(importes);
+  
+  console.log(suma);
+  
+*/
+
+/*Ejercicio 3
+Ahora es el turno de una empresa de trenes la cual nos enfrenta a la siguiente situación:
+Un tren va desde terminal hasta terminal con algunas estaciones intermedias, y la empresa necesita saber
+cuántos pasajeros lleva luego de la parada en cada estación. Para ello nos contrataron a nosotros, quienes
+somos responsables de generar un programa que lo resuelva.
+Debemos escribir una función, la cual cuando reciba la cantidad de estaciones que avanzó el tren, nos
+devuelva un reporte de la cantidad de cada una de las estaciones y la cantidad de pasajeros que lleva el tren.
+La empresa nos dió los siguientes datos:
+-El tren sale de la estación Uno siempre con 200 pasajeros.
+-En cada estación el tren sube 50 pasajeros y bajan 30.
+-En la estación Olimpo (la estación número 5), como es una estación central es la única donde bajan 80
+personas y suben 120. */
+
+/* Función para calcular la cantidad de pasajeros en cada estación
+function pasajerosEnEstaciones(cantidadEstaciones) {
+  // Inicializamos la cantidad de pasajeros en el tren
+  let pasajeros = 200;
+
+  // Recorremos las estaciones
+  for (let i = 1; i <= cantidadEstaciones; i++) {
+    // Si la estación es Olimpo, bajan 80 pasajeros y suben 120
+    if (i === 5) {
+      pasajeros -= 80;
+      pasajeros += 120;
+    } else {
+      // En las demás estaciones, suben 50 pasajeros y bajan 30
+      pasajeros += 50;
+      pasajeros -= 30;
+    }
+
+    // Imprimimos el reporte de la estación
+    console.log(`En la estación ${i}, hay ${pasajeros} pasajeros`);
+  }
+
+  // Devolvemos la cantidad de pasajeros en el tren
+  return pasajeros;
+}
+
+// Ejemplo de uso
+pasajerosEnEstaciones(5); */
+
+/*Ejercicio 2
+Una cadena de cines nueva quiere desarrollar su página web, y nos presentó la siguiente situación:
+Cada vez que queremos ir al cine, además de ver si nuestra película está en cartelera, debemos verificar si el
+asiento que buscamos está disponible.
+Nos piden que escribamos una función, que tome como parámetro un conjunto de asientos disponibles y el
+asiento que quiere ocupar la persona. La función deberá verificar si el asiento solicitado se encuentra
+disponible y devolverle un mensaje claro y prolijo al cliente como: "Felicitaciones, el asiento número X está
+disponible" o "Lo sentimos, el asiento número X está ocupado, pero aún quedan X asientos disponibles".
+Ayuda:
+asientos([15, 28, 44, 45, 70], 15); */
+/*function asientosDisponibles(asientos, asiento) {
+  // Verificamos si el asiento solicitado está en el arreglo de asientos disponibles
+  if (asientos.includes(asiento)) {
+    // Si está disponible, devolvemos un mensaje de éxito
+    return `Felicitaciones, el asiento número ${asiento} está disponible`;
+  } else {
+    // Si no está disponible, devolvemos un mensaje de error
+    return `Lo sentimos, el asiento número ${asiento} está ocupado, pero aún quedan ${asientos.length - 1} asientos disponibles`;
+  }
+}
+
+// Función para comprobar el funcionamiento de la función `asientosDisponibles()`
+function comprobar() {
+  let asientos = [15, 28, 44, 45, 70];
+// Asiento disponible
+  console.log(asientosDisponibles(asientos, 15)); // Devuelve "Felicitaciones, el asiento número 15 está disponible"
+
+  // Asiento no disponible
+  console.log(asientosDisponibles(asientos, 71)); // Devuelve "Lo sentimos, el asiento número 71 está ocupado, pero aún quedan 4 asientos disponibles"
+
+}
+
+comprobar();*/
