@@ -544,3 +544,56 @@ function comprobar() {
 }
 
 comprobar();*/
+
+
+/* clase 22 ejercicio 
+
+1) Crear un objeto "perro". La variable debe tener 3 
+propiedades: 
+nombre, con valor de tipo string.
+edad, con valor de tipo number.
+género, con valor de tipo string.
+vacunado, con valor de tipo boolean.
+entrenado, con valor de tipo boolean.
+Mostrar por consola el nombre, género y si está 
+entrenado*/
+/*
+const perro = {
+  nombre: "firulais",
+  edad: 2,
+  genero: "hembra",
+  vacunado: true,
+  entrenado: false,
+};
+ let oracion =`el nombre del perro es  ${perro.nombre}, su genero es ${perro.genero} y esta entrenado:  ${perro.entrenado}`
+console.log(oracion);
+
+*/
+/*
+2) Dado el siguiente objeto "pokemon", al mismo, hay que 
+pedirle que entrene. Para esto, hay que crear una función con 3 
+características:
+1- Recibe por parámetro la cantidad de horas.
+2- Resta a su energía (this.energia) la cantidad de horas x5.
+3- Incrementa su experiencia (this.experiencia) la cantidad de 
+horas x2.
+Una vez definida la función, ejecutar el código y mostrar cómo 
+va variando la energía y experiencia del pokemon por consola. */
+
+/*
+let pokemon = {
+ energia: 100,
+ experiencia: 10,
+ nombre: "Pikachu",
+ entrenar:function (horas){
+  this.energia -= horas * 5;
+  this.experiencia += horas * 2;
+  console.log (`energia del pokemon ${this.energia}, `);
+  console.log (`experiencia del pokemon ${this.experiencia}, `);
+}
+};
+
+pokemon.entrenar (5)
+
+*/
+
