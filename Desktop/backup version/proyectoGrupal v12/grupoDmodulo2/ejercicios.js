@@ -597,3 +597,23 @@ pokemon.entrenar (5)
 
 */
 
+/*clase 23 ejercicios*/
+
+let formulario = [
+  {
+    nombre: "guadalupe",
+    apellido: "semprum",
+    ciudad: "la plata",
+    edad: 32
+  }
+];
+
+guardarInformacion(formulario);
+
+function guardarInformacion(formulario) {
+  let jsonFormulario = JSON.stringify(formulario);
+
+  localStorage.setItem("formulario", jsonFormulario);
+
+  console.log(localStorage.getItem("formulario"));
+}
