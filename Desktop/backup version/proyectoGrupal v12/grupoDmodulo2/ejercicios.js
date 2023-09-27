@@ -598,7 +598,7 @@ pokemon.entrenar (5)
 */
 
 /*clase 23 ejercicios*/
-
+/*
 let formulario = [
   {
     nombre: "guadalupe",
@@ -617,3 +617,78 @@ function guardarInformacion(formulario) {
 
   console.log(localStorage.getItem("formulario"));
 }
+
+*/
+
+
+/* clase 24 ejercicio*/
+/*Crear archivo .js y linkearlo al HTML.
+-Crear una variable y almacenar el h3 del artículo.
+-Cambiar el nombre del curso a través de la 
+propiedad necesaria. 
+-Agregar texto a algún elemento HTML del index.
+-Crear una variable y almacenar todos los enlaces 
+existentes*/
+
+//let muestraH3 = document.querySelector("h3")
+//console.log(muestraH3);
+
+//document.getElementById ("pruebah3").innerHTML = "Pasos para el reciclaje"
+//console.log(muestraH3);
+/*
+ 
+let agregarH3 = document.querySelector("h3").innerHTML += "Agregado al h3";
+                   
+console.log(agregarH3); 
+
+let todosLosEnlaces = document.querySelectorAll ("a")
+console.log(todosLosEnlaces);
+*/
+
+//clase 25 ejercicio
+
+/*Utilizando el mismo proyecto con el que trabajamos 
+la clase anterior:
+-Agregar un artículo nuevo a la web desde js, 
+mediante los métodos aprendidos hoy.
+-Agregar links a redes sociales en el footer.
+-Crear una sección nueva, como la de "productos", 
+pero de otra índole, y agregarle contenido a gusto.*/
+
+let elementoPrueba = document.createElement("div")
+let parrafo = document.createElement("p")
+
+parrafo.innerText = "prueba agregando parrafo clase 25 "
+elementoPrueba.appendChild(parrafo)
+document.querySelector("main").appendChild(elementoPrueba)
+
+let arrayRedesSociales = [
+  {
+      redSocial: "Linkedin",
+      link: "https://ar.linkedin.com/"
+  },
+
+  {
+    redSocial: "Pinterest",
+    link: "https://ar.pinterest.com/"
+},
+]
+
+for (let i = 0; i < arrayRedesSociales.length; i++){
+  let redSocial = document.createElement("redSocial")
+  let link = document.createElement("link")
+  
+  redSocial.innerText = arrayRedesSociales[i].redSocial
+  link.innerText = arrayRedesSociales[i].link
+
+  footer.appendChild(redSocial)
+  footer.appendChild(link)
+ 
+
+ // document.querySelector("a.").appendChild(footer)
+ //falta completar esta parte revisar con video de la clase
+}
+  
+
+
+
