@@ -655,7 +655,7 @@ mediante los métodos aprendidos hoy.
 -Crear una sección nueva, como la de "productos", 
 pero de otra índole, y agregarle contenido a gusto.*/
 
-let elementoPrueba = document.createElement("div")
+/*let elementoPrueba = document.createElement("div")
 let parrafo = document.createElement("p")
 
 parrafo.innerText = "prueba agregando parrafo clase 25 "
@@ -689,6 +689,4 @@ for (let i = 0; i < arrayRedesSociales.length; i++){
  //falta completar esta parte revisar con video de la clase
 }
   
-
-
-
+*/
